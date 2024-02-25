@@ -1,1 +1,89 @@
-/*# sourceMappingURL=stayle.css.map */
+* {
+  font-family: "ALS Hauss Regular";
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.header__wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+  padding: 18px 0;
+}
+
+.header__icon-ryaan {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.header__bottom-line {
+  height: 48px;
+  border: 0.5px solid rgba(27, 20, 0, 0.1215686275);
+}
+
+.header__ryaan-text {
+  font-family: ALS Hauss Regular;
+  font-weight: 400;
+  font-size: 14px;
+  color: #1b1400;
+  letter-spacing: 2%;
+  text-decoration: none;
+}
+
+.header__link-wrapper {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+.header__link-project {
+  font-family: ALS Hauss Regular;
+  font-weight: 400;
+  font-size: 14px;
+  color: #1b1400;
+  letter-spacing: 2%;
+  text-decoration: none;
+}
+
+#header__section-help {
+  border: none;
+  font-family: ALS Hauss Regular;
+  font-weight: 400;
+  font-size: 14px;
+  color: #1b1400;
+  letter-spacing: 2%;
+}
+
+.header__login_enter {
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  border: none;
+  gap: 8px;
+  font-family: ALS Hauss Regular;
+  font-weight: 400;
+  font-size: 14px;
+  color: #1b1400;
+  letter-spacing: 2%;
+  padding: 12px 16px;
+  background-color: #ffcc33;
+}
+
+.header__login_enter:hover {
+  background-color: #e9b828;
+}
+
+.header__login_enter:active {
+  transform: scale(0.98);
+}/*# sourceMappingURL=stayle.css.map */
