@@ -84,9 +84,29 @@ body {
   padding: 12px 16px;
   background-color: #ffcc33;
 }
+
+.header__icon-bars-mobile {
+  display: none;
+}
+
 .header__login_enter:hover {
   background-color: #e9b828;
 }
 .header__login_enter:active {
   transform: scale(0.98);
+}
+
+@media screen and (max-width: 535px) {
+  .header__link-wrapper {
+    display: none;
+  }
+  .header__bottom-line {
+    display: none;
+  }
+  .header__ryaan-text {
+    display: none;
+  }
+  .header__icon-bars-mobile {
+    display: block;
+  }
 }
