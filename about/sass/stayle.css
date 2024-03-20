@@ -80,7 +80,7 @@ body {
 .header__section-help:hover .header__heddin-link {
   display: flex;
   opacity: 1;
-  z-index: 999;
+  z-index: 9;
 }
 
 .header__login_enter {
@@ -97,6 +97,7 @@ body {
   padding: 12px 16px;
   background-color: #ffcc33;
   z-index: 10;
+  cursor: pointer;
 }
 
 .header__icon-bars-mobile {
@@ -113,7 +114,7 @@ body {
 
 .header__heddin-link {
   width: 269px;
-  padding: 16px;
+  padding: 40px 16px 16px 16px;
   border-radius: 8px;
   background-color: #ffffff;
   display: flex;
@@ -125,7 +126,6 @@ body {
   transition: 0.5s;
   opacity: 0;
   z-index: -9;
-  box-shadow: 0 0 10px black;
 }
 .header__heddin-link a {
   padding: 8px 12px;
@@ -158,160 +158,66 @@ body {
     display: block;
   }
 }
-.main {
+.main__about-wrapper {
   background-color: #f6f6f6;
-  padding: 40px 0 80px 0;
+  padding: 20px 0 93px 0;
+}
+
+.line {
+  border: 0.5px solid rgba(196, 196, 196, 0.6);
+}
+
+.main__house-text-wrapper {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  padding: 0 0 20px 0;
+}
+
+.main__house-p {
+  font-family: ALS Hause;
+  font-weight: 500;
+  font-size: 12px;
+  color: #1b1400;
+  opacity: 40%;
+}
+
+.main__heading-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+
+.main___heading1 {
+  font-family: ALS Hause;
+  font-weight: 400;
+  font-size: 32px;
+  color: #000000;
+  padding-bottom: 24px;
+}
+
+.main___heading2 {
+  font-family: ALS Hause;
+  font-weight: 400;
+  font-size: 24px;
+  color: #000000;
+  padding-bottom: 20px;
+}
+
+.main___heading3 {
+  font-family: ALS Hause;
+  font-weight: 400;
+  font-size: 16px;
+  color: #000000;
+  opacity: 60%;
+}
+
+.main__box-home {
+  background-color: #ffffff;
 }
 
 .main__box-wrapper {
-  width: 100%;
-  display: flex;
-  gap: 60px;
-  border-radius: 12px;
-  background-color: #ffcc33;
-  padding: 32px 0 24px 24px;
-}
-
-.main__box-title {
-  font-family: ALS Hauss;
-  font-weight: 400;
-  font-size: 32px;
-  color: #000;
-  line-height: 38.4px;
-}
-
-.main__box-text {
-  font-family: ALS Hauss;
-  font-weight: 400;
-  font-size: 16px;
-  color: #000;
-  max-width: 486px;
-  width: 100%;
-  opacity: 70%;
-  padding: 8px 0 24px 0;
-}
-
-.main__box-button {
-  font-family: ALS Hauss;
-  font-weight: 400;
-  font-size: 14px;
-  color: #000;
-  padding: 12px 24px;
-  border-radius: 8px;
-  border: none;
-  background-color: #ffffff;
-}
-
-.main__box-button:active {
-  transform: scale(0.98);
-}
-
-.main__box-button:hover {
-  background-color: #f4f4f4;
-  cursor: pointer;
-}
-
-.main__box-img {
-  max-width: 360px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.main__box-img img {
-  max-width: 237px;
-  width: 100%;
-}
-
-.main__house-wrapper {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
-  padding-top: 15px;
-}
-
-.main__house-width {
-  max-width: 340px;
-  width: 100%;
-  border-radius: 12px;
-  background-color: #ffffff;
-  padding: 24px 0 24px 24px;
-}
-
-.main__house-box {
-  max-width: 695px;
-  width: 100%;
-  border-radius: 12px;
-  display: flex;
-  align-items: center;
-}
-
-.main_house-text-wrapper img {
-  padding-bottom: 24px;
-}
-
-.main__house-title {
-  font-family: ALS Hauss;
-  font-weight: 400;
-  font-size: 24px;
-  color: #000;
-  padding-bottom: 12px;
-}
-
-.main__house-text {
-  max-width: 306px;
-  width: 100%;
-  font-family: ALS Hauss;
-  font-weight: 400;
-  font-size: 16px;
-  color: #000;
-  padding-bottom: 24px;
-}
-
-.main__house-button {
-  border: none;
-  border-radius: 8px;
-  padding: 12px 24px;
-  background-color: #ffcc33;
-  font-family: ALS Hauss;
-  font-weight: 400;
-  font-size: 14px;
-  color: #1b1400;
-}
-
-.main__house-button:active {
-  transform: scale(0.98);
-}
-
-.main__house-button:hover {
-  background-color: #d6aa26;
-}
-
-.main__house-complaint-title {
-  font-family: ALS Hauss;
-  font-weight: 400;
-  font-size: 24px;
-  color: #000;
-  padding: 24px 0 12px 0;
-  max-width: 292px;
-  width: 100%;
-}
-
-.main__house-complaint-text {
-  max-width: 292px;
-  width: 100%;
-  font-family: ALS Hauss;
-  font-weight: 400;
-  font-size: 16px;
-  color: #000;
-  padding-bottom: 24px;
-}
-
-.main__house-complaint-imgAndWrapper {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
+  position: relative;
 }
 
 .main__box-opinions-wrapper {
@@ -322,6 +228,8 @@ body {
   gap: 10px;
   border-radius: 12px;
   margin: 64px 0 0 0;
+  position: absolute;
+  top: -160px;
 }
 
 .main__box-opinions-text {
@@ -332,62 +240,87 @@ body {
 }
 
 .main__box-opinions-number {
-  font-family: ALS Hauss;
+  font-family: ALS Hause;
   font-weight: 400;
-  font-size: 48px;
+  font-size: 40px;
   color: #000;
 }
 
-.main__box-opinions-text {
-  font-family: ALS Hauss;
+.main__box-opinions {
+  font-family: ALS Hause;
   font-weight: 400;
   font-size: 16px;
   color: #000;
+  opacity: 60%;
 }
 
-@media screen and (max-width: 1086px) {
-  .main__house-box {
-    max-width: 100%;
-    justify-content: space-between;
-    padding-right: 10px;
-  }
-  .main__house-width {
-    max-width: 100%;
-  }
+.main__object-house {
+  width: 100%;
+  padding-top: 100px;
+  position: relative;
 }
-@media screen and (max-width: 800px) {
-  .main__box-img {
-    display: none;
-  }
-  .main__box-wrapper {
-    padding: 32px 16px 16px 16px;
-  }
-  .main__house-img-person-dog {
-    display: none;
-  }
+
+.main__question-img {
+  width: 43%;
+  position: absolute;
+  bottom: 200px;
+  right: 24%;
 }
+
+.main__img-object {
+  width: 100%;
+}
+
+.main__object-text {
+  padding: 48px 0;
+  text-align: center;
+  font-family: ALS Hause;
+  font-weight: 400;
+  font-size: 24px;
+  color: #000000;
+}
+
+.main__button-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  padding-bottom: 50px;
+}
+
+.main__button {
+  width: 50px;
+  border: 5px solid #e3e3e3;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.main__button:hover {
+  border-color: #ffcc33;
+}
+
 @media screen and (max-width: 660px) {
-  .main_house-img-wrapper {
+  .main__img {
     display: none;
   }
   .main__box-opinions-wrapper {
+    margin: 100px 0 0 0;
     flex-direction: column;
     align-items: center;
   }
-  .main__box-opinions-wrapper {
-    margin-top: 24px;
+  .main__img-object {
+    padding-top: 370px;
+  }
+  .main__box-opinions-text {
+    padding: 31px 0;
   }
 }
-@media screen and (max-width: 450px) {
-  .main__box-button,
-  .main__house-button {
-    width: 100%;
+@media screen and (max-width: 458px) {
+  .main__question-img {
+    bottom: 235px;
   }
-  .main__house-box {
-    display: block;
-  }
-  .main__house-width {
-    padding-right: 24px;
+  .main__button {
+    width: 24px;
   }
 }
 .footer ul,
