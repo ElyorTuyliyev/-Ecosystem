@@ -11,6 +11,14 @@
   margin: 0;
   padding: 0;
 }
+@font-face {
+  font-family: "ALS Hauss Regular";
+  src: url("https://db.onlinewebfonts.com/t/acadfdfc97cd213de5a5609200dd5906.eot");
+  src: url("https://db.onlinewebfonts.com/t/acadfdfc97cd213de5a5609200dd5906.eot?#iefix") format("embedded-opentype"), url("https://db.onlinewebfonts.com/t/acadfdfc97cd213de5a5609200dd5906.woff") format("woff"), url("https://db.onlinewebfonts.com/t/acadfdfc97cd213de5a5609200dd5906.woff2") format("woff2"), url("https://db.onlinewebfonts.com/t/acadfdfc97cd213de5a5609200dd5906.ttf") format("truetype"), url("https://db.onlinewebfonts.com/t/acadfdfc97cd213de5a5609200dd5906.svg#ALS Hauss Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 
 body {
   margin: 0;
@@ -67,7 +75,6 @@ body {
 }
 
 .header__section-help {
-  border: none;
   font-family: ALS Hauss Regular;
   font-weight: 400;
   font-size: 14px;
@@ -97,6 +104,7 @@ body {
   padding: 12px 16px;
   background-color: #ffcc33;
   z-index: 10;
+  cursor: pointer;
 }
 
 .header__icon-bars-mobile {
@@ -158,171 +166,33 @@ body {
     display: block;
   }
 }
-.main__about-wrapper {
-  background-color: #f6f6f6;
-  padding: 20px 0 93px 0;
+.main__mini-house_wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 20px 0;
+}
+
+.main__house-text {
+  font-family: "ALS Hauss Regular";
+  font-weight: 800;
+  font-size: 12px;
+  color: #1b1400;
+  opacity: 40%;
 }
 
 .line {
   border: 0.5px solid rgba(196, 196, 196, 0.6);
 }
 
-.main__house-text-wrapper {
-  display: flex;
-  gap: 8px;
-  align-items: center;
-  padding: 0 0 20px 0;
+:root {
+  --carousel-space: 0;
 }
 
-.main__house-p {
-  font-family: ALS Hause;
-  font-weight: 500;
-  font-size: 12px;
-  color: #1b1400;
-  opacity: 40%;
+#slide-1:checked {
+  color: red;
 }
 
-.main__heading-wrapper {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 20px;
-}
-
-.main___heading1 {
-  font-family: ALS Hause;
-  font-weight: 400;
-  font-size: 32px;
-  color: #000000;
-  padding-bottom: 24px;
-}
-
-.main___heading2 {
-  font-family: ALS Hause;
-  font-weight: 400;
-  font-size: 24px;
-  color: #000000;
-  padding-bottom: 20px;
-}
-
-.main___heading3 {
-  font-family: ALS Hause;
-  font-weight: 400;
-  font-size: 16px;
-  color: #000000;
-  opacity: 60%;
-}
-
-.main__box-home {
-  background-color: #ffffff;
-}
-
-.main__box-wrapper {
-  position: relative;
-}
-
-.main__box-opinions-wrapper {
-  width: 100%;
-  background-color: #ffcc33;
-  display: flex;
-  justify-content: space-around;
-  gap: 10px;
-  border-radius: 12px;
-  margin: 64px 0 0 0;
-  position: absolute;
-  top: -160px;
-}
-
-.main__box-opinions-text {
-  max-width: 290px;
-  width: 100%;
-  text-align: center;
-  padding: 56px 0;
-}
-
-.main__box-opinions-number {
-  font-family: ALS Hause;
-  font-weight: 400;
-  font-size: 40px;
-  color: #000;
-}
-
-.main__box-opinions {
-  font-family: ALS Hause;
-  font-weight: 400;
-  font-size: 16px;
-  color: #000;
-  opacity: 60%;
-}
-
-.main__object-house {
-  width: 100%;
-  padding-top: 100px;
-  position: relative;
-}
-
-.main__question-img {
-  width: 43%;
-  position: absolute;
-  bottom: 200px;
-  right: 24%;
-}
-
-.main__img-object {
-  width: 100%;
-}
-
-.main__object-text {
-  padding: 48px 0;
-  text-align: center;
-  font-family: ALS Hause;
-  font-weight: 400;
-  font-size: 24px;
-  color: #000000;
-}
-
-.main__button-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 12px;
-  padding-bottom: 50px;
-}
-
-.main__button {
-  width: 50px;
-  border: 5px solid #e3e3e3;
-  border-radius: 6px;
-  cursor: pointer;
-}
-
-.main__button:hover {
-  border-color: #ffcc33;
-}
-
-@media screen and (max-width: 660px) {
-  .main__img {
-    display: none;
-  }
-  .main__box-opinions-wrapper {
-    margin: 100px 0 0 0;
-    flex-direction: column;
-    align-items: center;
-  }
-  .main__img-object {
-    padding-top: 370px;
-  }
-  .main__box-opinions-text {
-    padding: 31px 0;
-  }
-}
-@media screen and (max-width: 458px) {
-  .main__question-img {
-    bottom: 235px;
-  }
-  .main__button {
-    width: 24px;
-  }
-}
 .footer ul,
 .footer li {
   padding: 0;
