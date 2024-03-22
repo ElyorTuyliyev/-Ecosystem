@@ -11,14 +11,6 @@
   margin: 0;
   padding: 0;
 }
-@font-face {
-  font-family: "ALS Hauss Regular";
-  src: url("https://db.onlinewebfonts.com/t/acadfdfc97cd213de5a5609200dd5906.eot");
-  src: url("https://db.onlinewebfonts.com/t/acadfdfc97cd213de5a5609200dd5906.eot?#iefix") format("embedded-opentype"), url("https://db.onlinewebfonts.com/t/acadfdfc97cd213de5a5609200dd5906.woff") format("woff"), url("https://db.onlinewebfonts.com/t/acadfdfc97cd213de5a5609200dd5906.woff2") format("woff2"), url("https://db.onlinewebfonts.com/t/acadfdfc97cd213de5a5609200dd5906.ttf") format("truetype"), url("https://db.onlinewebfonts.com/t/acadfdfc97cd213de5a5609200dd5906.svg#ALS Hauss Regular") format("svg");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
 
 body {
   margin: 0;
@@ -75,6 +67,7 @@ body {
 }
 
 .header__section-help {
+  border: none;
   font-family: ALS Hauss Regular;
   font-weight: 400;
   font-size: 14px;
@@ -104,7 +97,6 @@ body {
   padding: 12px 16px;
   background-color: #ffcc33;
   z-index: 10;
-  cursor: pointer;
 }
 
 .header__icon-bars-mobile {
