@@ -21,10 +21,211 @@
   border: 0.5px solid #c4c4c499;
 }
 
-:root {
-  --carousel-space: 0;
+.main__appeals-title-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4px;
+  padding: 24px 0 8px 0;
 }
 
-#slide-1:checked {
-  color: red;
+.main__appeals-title {
+  @include textstayle(32px, 400, ALS Hauss Regular, #000);
+}
+
+.main__appeals-title-button {
+  @include textstayle(14px, 400, ALS Hauss, #1b1400);
+  padding: 12px 24px;
+  border: none;
+  background-color: #ffcc33;
+  border-radius: 8px;
+  transition: 0.4s;
+}
+.main__appeals-title-button:hover {
+  background-color: #ebb511;
+}
+.main__appeals-title-button:active {
+  transform: scale(0.98);
+}
+
+.main__appeals-text-wrapper {
+  max-width: 486px;
+  width: 100%;
+  padding: 0 0 24px 0;
+  @include textstayle(16px, 400, ALS Hauss Regular, #000);
+}
+
+.main__appeals-number-link {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0 20px 0;
+}
+
+.main__appeals-number {
+  display: flex;
+  gap: 8px;
+}
+
+.main__appeals-filtr {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.main__appls-bc {
+  border: none;
+  border-radius: 8px;
+  padding: 4px 12px;
+}
+.main__appls-bc:hover {
+  background-color: #ffcc33;
+}
+.main__appls-bc:active {
+  transform: scale(0.98);
+}
+
+.complaints {
+  background: #f6f6f6;
+}
+
+.complaints-wrapper {
+  background: #f6f6f6;
+  padding: 16px 0;
+  display: flex;
+  gap: 8px;
+  justify-content: space-between;
+}
+
+.main__complaints-wrapper {
+  max-width: 690px;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 24px;
+  border-radius: 12px;
+  position: relative;
+}
+
+.main__complaints-number-call {
+  display: flex;
+  gap: 8px;
+}
+
+.main__complaints-buton {
+  border: none;
+  border-radius: 8px;
+  padding: 4px 8px;
+  @include textstayle(-14px, 400, ALS Hauss Regular, #000);
+}
+
+.main__complaints-buton-bc {
+  background: #ffcc3329;
+}
+
+.main__complaints-title {
+  @include textstayle(20px, 400, ALS Hauss Regular, #000000);
+  letter-spacing: 2%;
+  padding: 16px 0 12px 0;
+}
+
+.main__complaints-text {
+  @include textstayle(16px, 400, ALS Hauss Regular, #1b1400);
+  line-height: 24.4px;
+  opacity: 80%;
+}
+
+.main__complaints-img-wrapper {
+  display: flex;
+  gap: 4px;
+  overflow-x: scroll;
+  padding: 24px 0;
+  scroll-behavior: smooth;
+}
+.main__complaints-img-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.main__complaints-img-scroll-wrapper {
+  position: absolute;
+  right: 25px;
+  bottom: 125px;
+}
+
+.main__complaints-butoon-details {
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  background-color: #ffcc33;
+  cursor: pointer;
+}
+.main__complaints-butoon-details:hover {
+  background-color: #ffc311;
+}
+.main__complaints-butoon-details:active {
+  transform: scale(0.98);
+}
+
+// ----------------------------------------------------------
+.main__complaints-number-wrapper {
+  max-width: 330px;
+  width: 100%;
+  padding: 24px;
+  background-color: #ffffff;
+  border-radius: 8px;
+}
+
+.main__complaints-number {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @include textstayle(40px, 400, ALS Hauss Regular, #000);
+}
+
+.main__complaints-number-text {
+  @include textstayle(14px, 400, ALS Hauss Regular, #000);
+  opacity: 60%;
+}
+
+.main__complaints-number-joining {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.main__complaints-like {
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  background-color: #ffcc33;
+  @include textstayle(14px, 400, ALS Hauss Regular, #333);
+}
+
+.main__number-text-wrapper {
+  display: flex;
+  gap: 24px;
+  flex-direction: column;
+}
+
+.main__number-p-bc {
+  @include textstayle(12px, 500, ALS Hauss Regular, #1b140066);
+}
+
+.main__number-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2 * 8px;
+  padding: 32px 0 64px 0;
+}
+
+.main__button_run {
+  padding: 10px 14px;
+  border: none;
+  background-color: #eaeaea;
+  border-radius: 2 * 4px;
+}
+.main__button_run:hover {
+  background-color: #ffc311;
 }
