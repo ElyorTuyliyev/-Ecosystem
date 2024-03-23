@@ -105,6 +105,7 @@ body {
   padding: 12px 16px;
   background-color: #ffcc33;
   z-index: 10;
+  cursor: pointer;
 }
 
 .header__icon-bars-mobile {
