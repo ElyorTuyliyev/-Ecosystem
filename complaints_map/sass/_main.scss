@@ -75,7 +75,15 @@ body {
   overflow-x: scroll;
   padding: 24px 0;
   scroll-behavior: smooth;
+  position: relative;
 }
+
+.main__img-eko-scroll-bar {
+  position: absolute;
+  right: 0;
+  top: 70px;
+}
+
 .main__complaints-img-wrapper::-webkit-scrollbar {
   display: none;
 }
@@ -270,4 +278,14 @@ body {
 }
 .main__img-map {
   padding-top: 12px;
+}
+
+@media screen and (max-width: 1070px) {
+  .complaints-wrapper {
+    flex-direction: column;
+  }
+  .main__complaints-wrapper,
+  .main__complaints-number-wrapper {
+    max-width: 100%;
+  }
 }
