@@ -276,3 +276,48 @@
 .main__button_run:hover {
   background-color: #ffc311;
 }
+@media screen and (max-width: 1050px) {
+  .complaints-wrapper {
+    flex-direction: column;
+  }
+
+  .main__complaints-wrapper,
+  .main__complaints-number-wrapper {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 635px) {
+  .main__appeals-number,
+  .main__hidden-wrapper {
+    flex-direction: column;
+  }
+
+  .main__appeals-number-link {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .main__appls-bc {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .mobile__adaptiw {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .main__appeals-title-wrapper {
+    flex-direction: column;
+    width: 100%;
+    align-items: normal;
+  }
+}
+@media screen and (max-width: 455px) {
+  .main__number-link :nth-child(4),
+  .main__number-link :nth-child(5) {
+    display: none;
+  }
+}
