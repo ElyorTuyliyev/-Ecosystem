@@ -167,171 +167,318 @@ body {
     display: block;
   }
 }
-.main__about-wrapper {
-  background-color: #f6f6f6;
-  padding: 20px 0 93px 0;
+body {
+  position: relative;
 }
 
 .line {
-  border: 0.5px solid rgba(196, 196, 196, 0.6);
+  border: 0.5px solid #c4c4c4;
 }
 
-.main__house-text-wrapper {
+.main {
+  background: #f6f6f6;
+}
+
+.main__mini-house_wrapper {
   display: flex;
-  gap: 8px;
   align-items: center;
-  padding: 0 0 20px 0;
+  gap: 8px;
+  padding: 20px 0;
 }
 
-.main__house-p {
-  font-family: ALS Hause;
-  font-weight: 500;
+.main__house-text {
+  font-family: "ALS Hauss Regular";
+  font-weight: 800;
   font-size: 12px;
   color: #1b1400;
   opacity: 40%;
 }
 
-.main__heading-wrapper {
+.complaints-wrapper {
+  padding: 16px 0;
   display: flex;
+  gap: 8px;
   justify-content: space-between;
-  padding-top: 20px;
 }
 
-.main___heading1 {
-  font-family: ALS Hause;
-  font-weight: 400;
-  font-size: 32px;
-  color: #000000;
-  padding-bottom: 24px;
-}
-
-.main___heading2 {
-  font-family: ALS Hause;
-  font-weight: 400;
-  font-size: 24px;
-  color: #000000;
-  padding-bottom: 20px;
-}
-
-.main___heading3 {
-  font-family: ALS Hause;
-  font-weight: 400;
-  font-size: 16px;
-  color: #000000;
-  opacity: 60%;
-}
-
-.main__box-home {
-  background-color: #ffffff;
-}
-
-.main__box-wrapper {
+.main__complaints-wrapper {
+  max-width: 690px;
+  width: 100%;
+  border-radius: 12px;
   position: relative;
 }
 
-.main__box-opinions-wrapper {
-  width: 100%;
-  background-color: #ffcc33;
+.main__complaints-number-call {
   display: flex;
-  justify-content: space-around;
-  gap: 10px;
-  border-radius: 12px;
-  margin: 64px 0 0 0;
+  gap: 8px;
+}
+
+.main__complaints-buton {
+  border: none;
+  border-radius: 8px;
+  padding: 4px 8px;
+  font-family: ALS Hauss Regular;
+  font-weight: 400;
+  font-size: -14px;
+  color: #000;
+}
+
+.main__complaints-buton-bc {
+  background: rgba(255, 204, 51, 0.1607843137);
+}
+
+.main__complaints-title {
+  font-family: ALS Hauss Regular;
+  font-weight: 400;
+  font-size: 20px;
+  color: #000000;
+  letter-spacing: 2%;
+  padding: 16px 0 12px 0;
+}
+
+.main__complaints-text {
+  font-family: ALS Hauss Regular;
+  font-weight: 400;
+  font-size: 16px;
+  color: #1b1400;
+}
+
+.main__complaints-img-wrapper {
+  display: flex;
+  gap: 4px;
+  overflow-x: scroll;
+  padding: 24px 0;
+  scroll-behavior: smooth;
+}
+
+.main__complaints-img-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.main__complaints-img-scroll-wrapper {
   position: absolute;
-  top: -160px;
+  right: 0px;
+  top: 370px;
 }
 
-.main__box-opinions-text {
-  max-width: 290px;
+.main__questions-title {
+  font-family: ALS Hauss Regular;
+  font-weight: 400;
+  font-size: 20px;
+  color: #000000;
+  padding: 20px 0 16px 0;
+}
+
+.main__question-time {
+  font-family: ALS Hauss Regular;
+  font-weight: 400;
+  font-size: 14px;
+  color: #000000;
+  opacity: 40%;
+  padding: 16px 0 8px 0;
+}
+
+.main__question-text {
+  font-family: ALS Hauss Regular;
+  font-weight: 400;
+  font-size: 16px;
+  color: #1b1400;
+}
+
+.main__complaints-butoon-details {
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  background-color: #ffcc33;
+  cursor: pointer;
+}
+
+.main__complaints-butoon-details:hover {
+  background-color: #ffc311;
+}
+
+.main__complaints-butoon-details:active {
+  transform: scale(0.98);
+}
+
+.main__complaints-number-wrapper {
+  max-width: 330px;
   width: 100%;
-  text-align: center;
-  padding: 56px 0;
+  padding: 24px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  position: relative;
 }
 
-.main__box-opinions-number {
-  font-family: ALS Hause;
+.main__complaints-number {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: ALS Hauss Regular;
   font-weight: 400;
   font-size: 40px;
   color: #000;
 }
 
-.main__box-opinions {
-  font-family: ALS Hause;
+.main__complaints-number-text {
+  font-family: ALS Hauss Regular;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
   color: #000;
   opacity: 60%;
 }
 
-.main__object-house {
-  width: 100%;
-  padding-top: 100px;
+.main__heddin-like-wrapper {
+  display: flex;
+  justify-content: space-between;
   position: relative;
 }
 
-.main__question-img {
-  width: 43%;
-  position: absolute;
-  bottom: 200px;
-  right: 24%;
-}
-
-.main__img-object {
-  width: 100%;
-}
-
-.main__object-text {
-  padding: 48px 0;
-  text-align: center;
-  font-family: ALS Hause;
+.main__hidden-title {
+  font-family: ALS Hauss Regular;
   font-weight: 400;
-  font-size: 24px;
-  color: #000000;
+  font-size: 32px;
+  color: #000;
+  padding-bottom: 24px;
 }
 
-.main__button-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 12px;
-  padding-bottom: 50px;
-}
-
-.main__button {
-  width: 50px;
-  border: 5px solid #e3e3e3;
-  border-radius: 6px;
+.main__heddin-like-cros {
+  position: absolute;
+  right: -25px;
+  top: -25px;
   cursor: pointer;
 }
 
-.main__button:hover {
-  border-color: #ffcc33;
+.main__heddin-like-cros:hover {
+  background-color: #cec5c5;
+  border-radius: 50%;
 }
 
-@media screen and (max-width: 660px) {
-  .main__img {
-    display: none;
-  }
-  .main__box-opinions-wrapper {
-    margin: 100px 0 0 0;
-    flex-direction: column;
-    align-items: center;
-  }
-  .main__img-object {
-    padding-top: 370px;
-  }
-  .main__box-opinions-text {
-    padding: 31px 0;
-  }
+.main__hiddin-link-copy {
+  width: 100%;
+  border: 0.5px solid rgba(27, 20, 0, 0.0784313725);
+  padding: 14px 0 14px 16px;
+  border-radius: 8px;
 }
-@media screen and (max-width: 458px) {
-  .main__question-img {
-    bottom: 235px;
-  }
-  .main__button {
-    width: 24px;
-  }
+
+.main__link-copy-wrappers {
+  display: flex;
+  align-items: center;
+  position: relative;
 }
+
+.main__link-copy-button {
+  position: absolute;
+  right: 3px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  background-color: #ffcc33;
+}
+
+.main__hidden-link-home {
+  width: 100%;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.5803921569);
+  padding: 32px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+.img-pointer {
+  cursor: pointer;
+}
+
+#run-link {
+  display: none;
+}
+
+#run-link:checked + .main__hidden-link-home {
+  display: flex;
+}
+
+.main__heddin-link-house {
+  max-width: 510px;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 32px;
+  border-radius: 12px;
+}
+
+.main__hidden-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-bottom: 40px;
+}
+
+.ic-whatsapp-bc {
+  background: #25d366 !important;
+}
+
+.ic-messege-bc {
+  background: #f6f6f6 !important;
+}
+
+.main__hidden-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: linear-gradient(180deg, #2aabee 0%, #229ed9 99.26%);
+}
+.main__hidden-link img {
+  width: 28px;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+}
+
+.main__complaints-number-joining {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.main__complaints-like {
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  background-color: #ffcc33;
+  font-family: ALS Hauss Regular;
+  font-weight: 400;
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+}
+
+.main__number-text-wrapper {
+  display: flex;
+  gap: 24px;
+  flex-direction: column;
+}
+
+.main__number-p-bc {
+  font-family: ALS Hauss Regular;
+  font-weight: 500;
+  font-size: 12px;
+  color: rgba(27, 20, 0, 0.4);
+}
+
+.main__img-map {
+  padding-top: 12px;
+}
+
 .footer ul,
 .footer li {
   padding: 0;
