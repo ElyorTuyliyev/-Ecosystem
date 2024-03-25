@@ -316,9 +316,7 @@
   }
 }
 @media screen and (max-width: 455px) {
-  .main__number-link :nth-child(4) {
-    display: none;
-  }
+  .main__number-link :nth-child(4),
   .main__number-link :nth-child(5) {
     display: none;
   }
